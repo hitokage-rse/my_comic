@@ -6,6 +6,7 @@ target 'MyComic' do
   use_frameworks!
 
   # Pods for MyComic
+  pod 'R.swift'
 
   target 'MyComicTests' do
     inherit! :search_paths

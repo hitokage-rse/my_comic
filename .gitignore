@@ -135,3 +135,6 @@ iOSInjectionProject/
 ### CocoaPods ###
 .bundle/
 vendor/bundle
+
+### R.swift ###
+*.generated.swift
