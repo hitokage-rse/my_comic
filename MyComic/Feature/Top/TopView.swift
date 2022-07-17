@@ -12,11 +12,11 @@ struct TopView: View {
         TabView {
             MyListView()
                 .tabItem {
-                    Text("持ってる")
+                    Text(R.string.myComic.topMyListTabTitle())
                 }
             ToBuyListView()
                 .tabItem {
-                    Text("買いたい")
+                    Text(R.string.myComic.topToBuyListTabTitle())
                 }
         }
     }

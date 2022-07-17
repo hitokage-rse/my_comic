@@ -24,7 +24,8 @@
 		C67176DE2872A3B7008E6CEC /* TopScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67176DD2872A3B7008E6CEC /* TopScene.swift */; };
 		C67176E228839718008E6CEC /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67176E128839718008E6CEC /* MyListView.swift */; };
 		C67176E428839725008E6CEC /* ToBuyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67176E328839725008E6CEC /* ToBuyListView.swift */; };
-		C6CE09822883C20E001BECE9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE09812883C20E001BECE9 /* R.generated.swift */; };
+		C6CE09872883C7F2001BECE9 /* MyComic.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6CE09862883C7F2001BECE9 /* MyComic.strings */; };
+		C6CE098E2883CE27001BECE9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE098D2883CE27001BECE9 /* R.generated.swift */; };
 		D5EB2E69D83CEBB1E2241F55 /* Pods_MyComicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AE3CF02AF4708D1DA928CD /* Pods_MyComicTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +76,8 @@
 		C67176DD2872A3B7008E6CEC /* TopScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScene.swift; sourceTree = "<group>"; };
 		C67176E128839718008E6CEC /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
 		C67176E328839725008E6CEC /* ToBuyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBuyListView.swift; sourceTree = "<group>"; };
-		C6CE09812883C20E001BECE9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C6CE09862883C7F2001BECE9 /* MyComic.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = MyComic.strings; sourceTree = "<group>"; };
+		C6CE098D2883CE27001BECE9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = MyComic/Application/Resources/R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C991E5B5E5B286E6E7C31831 /* Pods-MyComic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyComic.debug.xcconfig"; path = "Target Support Files/Pods-MyComic/Pods-MyComic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,8 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				C67176B128703DB0008E6CEC /* Resources */,
-				C6717685287037CB008E6CEC /* MyComicApp.swift */,
 				C671768E287037CF008E6CEC /* Info.plist */,
+				C6717685287037CB008E6CEC /* MyComicApp.swift */,
+				C6CE098D2883CE27001BECE9 /* R.generated.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -203,8 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				C671768B287037CF008E6CEC /* Preview Content */,
+				C6CE098A2883C941001BECE9 /* Strings */,
 				C6717689287037CF008E6CEC /* Assets.xcassets */,
-				C6CE09812883C20E001BECE9 /* R.generated.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -294,6 +297,14 @@
 				C67176E328839725008E6CEC /* ToBuyListView.swift */,
 			);
 			path = ToBuyList;
+			sourceTree = "<group>";
+		};
+		C6CE098A2883C941001BECE9 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE09862883C7F2001BECE9 /* MyComic.strings */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CE09872883C7F2001BECE9 /* MyComic.strings in Resources */,
 				C671768D287037CF008E6CEC /* Preview Assets.xcassets in Resources */,
 				C671768A287037CF008E6CEC /* Assets.xcassets in Resources */,
 			);
@@ -542,11 +554,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				$SRCROOT/MyComic/Application/Resources/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/MyComic/Application/Resources/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -566,7 +578,7 @@
 				C67176DC2872A3A0008E6CEC /* TopPresenter.swift in Sources */,
 				C67176E228839718008E6CEC /* MyListView.swift in Sources */,
 				C67176C528704A15008E6CEC /* Repository.swift in Sources */,
-				C6CE09822883C20E001BECE9 /* R.generated.swift in Sources */,
+				C6CE098E2883CE27001BECE9 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,11 @@
+/* 
+  MyComic.strings
+  MyComic
+
+  Created by kagehito on 2022/07/17.
+  
+*/
+
+// MARK: - Top
+"top.myList.tabTitle" = "持ってる";
+"top.toBuyList.tabTitle" = "買いたい";
