@@ -7,6 +7,7 @@ target 'MyComic' do
 
   # Pods for MyComic
   pod 'R.swift'
+  pod 'Moya/Combine', '~> 15.0'
 
   target 'MyComicTests' do
     inherit! :search_paths
