@@ -23,7 +23,8 @@ protocol ScreenEvent {}
 /// 実体には`XXInteractor`と命名する
 protocol UseCase {
     associatedtype PresenterInput: PresenterCommand
-    associatedtype PresenterOutput
+    associatedtype PresenterOutput: UseCaseResponse
+    var output: AnyPublisher<PresenterOutput, Error> { get }
     func handle(_ input: PresenterInput)
 }
 
@@ -39,10 +40,10 @@ protocol Presentation {
     associatedtype ViewInput: ScreenEvent
     associatedtype ViewOutput: ViewModel
     associatedtype Router: Wireframe
-    func handle(_ input: ViewInput)
     var interactor: UpperLayer { get }
     var viewModel: ViewOutput { get }
     var router: Router { get }
+    func handle(_ input: ViewInput)
 }
 
 protocol PresenterCommand {}
@@ -62,5 +63,5 @@ protocol ViewModel: ObservableObject {}
 protocol AppScene {
     associatedtype View: Screen
     var view: View { get }
-    func make() -> Self
+    static func make() -> Self
 }

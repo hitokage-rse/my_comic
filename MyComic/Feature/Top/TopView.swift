@@ -7,7 +7,14 @@
 
 import SwiftUI
 
-struct TopView: View {
+protocol TopScreen: Screen {}
+
+enum TopScreenEvent: ScreenEvent {}
+
+struct TopView: View, TopScreen {
+    typealias UpperLayer = TopPresenter
+    let presenter: UpperLayer
+
     var body: some View {
         TabView {
             MyListView()
@@ -24,6 +31,6 @@ struct TopView: View {
 
 struct TopView_Previews: PreviewProvider {
     static var previews: some View {
-        TopView()
+        TopScene.make().view
     }
 }

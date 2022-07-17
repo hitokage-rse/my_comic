@@ -215,7 +215,8 @@
 		C67176B228703DC0008E6CEC /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				C67176C82870B191008E6CEC /* Comic */,
+				C67176DF2883916C008E6CEC /* MyList */,
+				C67176E0288391E7008E6CEC /* ToBuyList */,
 				C67176D028729B44008E6CEC /* Top */,
 				C67176D32872A06E008E6CEC /* Protocols.swift */,
 			);
@@ -260,15 +261,6 @@
 			children = (
 			);
 			path = WebAPI;
-			sourceTree = "<group>";
-		};
-		C67176C82870B191008E6CEC /* Comic */ = {
-			isa = PBXGroup;
-			children = (
-				C67176DF2883916C008E6CEC /* MyList */,
-				C67176E0288391E7008E6CEC /* ToBuyList */,
-			);
-			path = Comic;
 			sourceTree = "<group>";
 		};
 		C67176D028729B44008E6CEC /* Top */ = {

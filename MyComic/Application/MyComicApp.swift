@@ -11,13 +11,13 @@ import SwiftUI
 struct MyComicApp: App {
     var body: some Scene {
         WindowGroup {
-            TopView()
+            TopScene.make().view
         }
     }
 }
 
 struct MyComicApp_Previews: PreviewProvider {
     static var previews: some View {
-        TopView()
+        TopScene.make().view
     }
 }
